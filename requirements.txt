@@ -1,3 +1,4 @@
 streamlit==0.81.0
 pandas==0.25.3
+numpy==1.19.5
 altair==4.1.0
