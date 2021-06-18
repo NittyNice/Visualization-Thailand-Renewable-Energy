@@ -86,9 +86,9 @@ st.markdown(html_thai_pdp ,unsafe_allow_html=True)
 # ------------------------------------------------------------------------------
 # Read data
 # install_cap = pd.read_csv('Install_Capacity_of_Alternative_Energy.csv')
-cf = pd.read_csv('data\Alternative_Energy_Capacity_Factor.csv')
+cf = pd.read_csv('Alternative_Energy_Capacity_Factor.csv')
 # generation = pd.read_csv('Alternative_Energy_Generation.csv')
-world_cf = pd.read_csv('data\World_capacity_factors.csv')
+world_cf = pd.read_csv('World_capacity_factors.csv')
 
 # ------------------------------------------------------------------------------
 components.html("""<b>กำลังการผลิตไฟฟ้าติดตั้ง (Installed power generation capacity)</b> หรือเรียกสั้น ๆ เป็นภาษาอังกฤษว่า Installed Capacity นั้น คือกำลังการผลิตไฟฟ้าที่โรงไฟฟ้าสามารถผลิตได้เมื่อเดินเครื่องเต็มกำลัง มีหน่วยเป็น กิโลวัตต์ (kW) หรือ เมกะวัตต์ (MW) <br>
