@@ -75,7 +75,7 @@ st.markdown(html_ratio_sum ,unsafe_allow_html=True)
 
 # ------------------------------------------------------------------------------
 # Thailand Electric Generation
-html_thai_gen = '<iframe width="100%" height="500" src="https://app.powerbi.com/view?r=eyJrIjoiZjJkM2VlOTktYTdkMy00MGY1LTlmYzAtMTE2MzMxZDk5MWNlIiwidCI6ImRiNWRlZjZiLThmZDgtNGEzZS05MWRjLThkYjI1MDFhNjgyMiIsImMiOjEwfQ%3D%3D" frameborder="0" allowFullScreen="true"></iframe>'
+html_thai_gen = '<iframe width="100%" height="500" src="https://app.powerbi.com/view?r=eyJrIjoiZjJkM2VlOTktYTdkMy00MGY1LTlmYzAtMTE2MzMxZDk5MWNlIiwidCI6ImRiNWRlZjZiLThmZDgtNGEzZS05MWRjLThkYjI1MDFhNjgyMiIsImMiOjEwfQ%3D%3D&pageName=ReportSection5de7c14c100a03822cde" frameborder="0" allowFullScreen="true"></iframe>'
 st.markdown(html_thai_gen ,unsafe_allow_html=True)
 
 # ------------------------------------------------------------------------------
