@@ -97,8 +97,8 @@ st.markdown(html_thai_gen ,unsafe_allow_html=True)
 st.write(f'''
     <div style="margin: 2rem 2rem 0 0; color: gray;">
             แหล่งที่มา: <a href="http://www.eppo.go.th/index.php/th/informationservices/ct-menu-item-56" target="_blank">สำนักงานนโยบายและแผนพลังงาน (สนพ.) สังกัตกระทรวงพลังงาน</a><br>
-            &emsp&emsp<a href="https://www.egat.co.th/images/businessop/PDP2018-Rev1-Oct2020.pdf" target="_blank">แผนพัฒนาพลังงาน</a><br>
-            &emsp&emsp<a href="https://www.egat.co.th/index.php?option=com_content&view=article&id=76&Itemid=116" target="_blank">การไฟฟ้าฝ่ายผลิตแห่งประเทศไทย</a>
+                      <a href="https://www.egat.co.th/images/businessop/PDP2018-Rev1-Oct2020.pdf" target="_blank">แผนพัฒนาพลังงาน</a><br>
+                      <a href="https://www.egat.co.th/index.php?option=com_content&view=article&id=76&Itemid=116" target="_blank">การไฟฟ้าฝ่ายผลิตแห่งประเทศไทย</a>
     </div>
 ''',unsafe_allow_html=True )
 
