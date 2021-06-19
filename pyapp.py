@@ -58,8 +58,7 @@ html_map = '''
         vizElement.parentNode.insertBefore(scriptElement, vizElement);
     </script>
     '''
-# components.html(html_map, height=600)
-st.markdown(html_map,unsafe_allow_html=True)
+components.html(html_map, height=600)
 
 # ------------------------------------------------------------------------------
 # Display ratio in Asean from Power BI
