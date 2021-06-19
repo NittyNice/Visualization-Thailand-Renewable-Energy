@@ -72,6 +72,8 @@ html_map = f'''
     </script>
     '''
 components.html(html_map, height=600)
+
+# Data source link
 st.write(f'''
     <div color: gray;">
         <p>แหล่งที่มา : <a href="https://ourworldindata.org/energy" target="_blank">Our World in Data</a></p>
@@ -94,23 +96,25 @@ st.header('รายละเอียดการผลิตพลังงา
 html_thai_gen = '<iframe width="100%" height="550" src="https://app.powerbi.com/view?r=eyJrIjoiZjJkM2VlOTktYTdkMy00MGY1LTlmYzAtMTE2MzMxZDk5MWNlIiwidCI6ImRiNWRlZjZiLThmZDgtNGEzZS05MWRjLThkYjI1MDFhNjgyMiIsImMiOjEwfQ%3D%3D&pageName=ReportSection5de7c14c100a03822cde" frameborder="0" allowFullScreen="true"></iframe>'
 st.markdown(html_thai_gen ,unsafe_allow_html=True)
 
-st.write(f'''
-    <div style="margin: 2rem 2rem 0 0; color: gray;">
-            <p style="margin-bottom: 0">แหล่งที่มา : <a href="http://www.eppo.go.th/index.php/th/informationservices/ct-menu-item-56" target="_blank">สำนักงานนโยบายและแผนพลังงาน (สนพ.) สังกัตกระทรวงพลังงาน</a></p>
-            <p style="margin: 0 0 0 5rem;"><a href="https://www.egat.co.th/images/businessop/PDP2018-Rev1-Oct2020.pdf" target="_blank">แผนพัฒนาพลังงาน</a></p>
-            <p style="margin: 0 0 0 5rem;"><a href="https://www.egat.co.th/index.php?option=com_content&view=article&id=76&Itemid=116" target="_blank">การไฟฟ้าฝ่ายผลิตแห่งประเทศไทย</a></p>
-    </div>
-''',unsafe_allow_html=True )
-
 # ------------------------------------------------------------------------------
 # Thailand PDP2018
 html_thai_pdp = '<iframe width="100%" height="550" src="https://app.powerbi.com/view?r=eyJrIjoiODc3MjY0YjMtNTUzNC00YzdjLTk3ZTgtN2U2ZjMxMjFhOTU1IiwidCI6ImRiNWRlZjZiLThmZDgtNGEzZS05MWRjLThkYjI1MDFhNjgyMiIsImMiOjEwfQ%3D%3D" frameborder="0" allowFullScreen="true"></iframe>'
 st.markdown(html_thai_pdp ,unsafe_allow_html=True)
 
+# Data source link
+st.write(f'''
+    <div style="margin: 2rem 2rem 0 0; color: gray;">
+            <p style="margin-bottom: 0">แหล่งที่มา : <a href="http://www.eppo.go.th/index.php/th/informationservices/ct-menu-item-56" target="_blank">สำนักงานนโยบายและแผนพลังงาน (สนพ.) สังกัตกระทรวงพลังงาน</a></p>
+            <p style="margin: 0 0 0 5rem;"><a href="https://www.egat.co.th/images/businessop/PDP2018-Rev1-Oct2020.pdf" target="_blank">แผนพัฒนาพลังงาน</a></p>
+            <p style="margin: 0 0 3rem 5rem;"><a href="https://www.egat.co.th/index.php?option=com_content&view=article&id=76&Itemid=116" target="_blank">การไฟฟ้าฝ่ายผลิตแห่งประเทศไทย</a></p>
+    </div>
+''',unsafe_allow_html=True )
+
 # ------------------------------------------------------------------------------
 # Read data
 # install_cap = pd.read_csv('Install_Capacity_of_Alternative_Energy.csv')
-cf = pd.read_csv('Alternative_Energy_Capacity_Factor.csv')
+# cf = pd.read_csv('Alternative_Energy_Capacity_Factor.csv')
+cf = pd.read_csv('data\Alternative_Energy_Capacity_Factor.csv')
 # generation = pd.read_csv('Alternative_Energy_Generation.csv')
 world_cf = pd.read_csv('World_capacity_factors.csv')
 
@@ -216,9 +220,10 @@ for idx in range(0,8):
             }
         },use_container_width = True)
 
+# Data source link
 st.write(f'''
     <div style="margin: 2rem 2rem 0 0; color: gray;">
             <p style="margin-bottom: 0">แหล่งที่มา :  <a href="http://services.dede.go.th/opendata/" target="_blank">กรมพัฒนาพลังงานทดแทนและอนุรักษ์พลังงาน สังกัตกระทรวงพลังงาน</a></p>
-            <p style="margin: 0 0 0 5rem;"><a href="https://www.eia.gov/todayinenergy/detail.php?id=22832" target="_blank">U.S. Energy Information Administration</a></p>
+            <p style="margin: 0 0 3rem 5rem;"><a href="https://www.eia.gov/todayinenergy/detail.php?id=22832" target="_blank">U.S. Energy Information Administration</a></p>
     </div>
 ''',unsafe_allow_html=True )
