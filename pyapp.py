@@ -96,16 +96,16 @@ st.markdown(html_thai_gen ,unsafe_allow_html=True)
 
 st.write(f'''
     <div style="margin: 2rem 2rem 0 0; color: gray;">
-        <table>
-            <tr>
+        <table style="border: None;">
+            <tr style="padding: 1px">
                 <td>แหล่งที่มา: </td>
                 <td><a href="http://www.eppo.go.th/index.php/th/informationservices/ct-menu-item-56" target="_blank">สำนักงานนโยบายและแผนพลังงาน (สนพ.) สังกัตกระทรวงพลังงาน</a></td>
             </tr>
-            <tr>
+            <tr style="padding: 1px">
                 <td></td>
                 <td><a href="https://www.egat.co.th/images/businessop/PDP2018-Rev1-Oct2020.pdf" target="_blank">แผนพัฒนาพลังงาน</a></td>
             </tr>
-            <tr>
+            <tr style="padding: 1px">
                 <td></td>
                 <td><a href="https://www.egat.co.th/index.php?option=com_content&view=article&id=76&Itemid=116" target="_blank">การไฟฟ้าฝ่ายผลิตแห่งประเทศไทย</a></td>
             </tr>
