@@ -1,16 +1,12 @@
 import streamlit as st
 import streamlit.components.v1 as components
 import pandas as pd
-# import numpy as np
-# import matplotlib.pyplot as plt
-# import seaborn as sns
 import altair as alt
 
-# # Setting seaborn plot theme
-# sns.set_theme(style="whitegrid")
-
+# ------------------------------------------------------------------------------
+# Setting CSS style containner-width and padding
 st.markdown(
-        f"""
+        f'''
         <style>
             .reportview-container .main .block-container{{
                 max-width: 70%;
@@ -20,12 +16,12 @@ st.markdown(
                 padding-bottom: 1rem;
             }}
         </style>
-        """,
+        ''',
         unsafe_allow_html=True
     )
 
 # ------------------------------------------------------------------------------
-# Bar chart race from flourish studio
+# Display bar chart race from flourish studio
 html_bar_race ='''
     <div class="flourish-embed flourish-bar-chart-race" data-src="visualisation/6453087">
         <script src="https://public.flourish.studio/resources/embed.js">
@@ -35,39 +31,40 @@ html_bar_race ='''
 components.html(html_bar_race, height=700)
 
 # ------------------------------------------------------------------------------
-# Bar chart race from flourish studio
+# Display World map from Tapleau-public
 html_map = '''
-        <div class='tableauPlaceholder' id='viz1623978522231' style='position: relative'>
-            <noscript><a href='#'>
-                <img alt='แผนที่แสดงสัดส่วนการใช้พลังงานทางเลือกต่อพลังงานทั้งหมดระหว่างปี 2015-2019 ' src='https:&#47;&#47;public.tableau.com&#47;static&#47;images&#47;He&#47;HeatMap2_16239342073290&#47;Sheet1&#47;1_rss.png' style='border: none' /></a></noscript><object class='tableauViz'  style='display:none;'><param name='host_url' value='https%3A%2F%2Fpublic.tableau.com%2F' />
-                <param name='embed_code_version' value='3' />
-                <param name='site_root' value='' />
-                <param name='name' value='HeatMap2_16239342073290&#47;Sheet1' />
-                <param name='tabs' value='no' /><param name='toolbar' value='yes' />
-                <param name='static_image' value='https:&#47;&#47;public.tableau.com&#47;static&#47;images&#47;He&#47;HeatMap2_16239342073290&#47;Sheet1&#47;1.png' />
-                <param name='animate_transition' value='yes' />
-                <param name='display_static_image' value='yes' /><param name='display_spinner' value='yes' />
-                <param name='display_overlay' value='yes' />
-                <param name='display_count' value='yes' />
-                <param name='language' value='en-US' />
-            </object>
-        </div>
-        <script type='text/javascript'>
-            var divElement = document.getElementById('viz1623978522231');
-            var vizElement = divElement.getElementsByTagName('object')[0];
-            vizElement.style.width = '100%';
-            vizElement.style.height = '500px';
-            var scriptElement = document.createElement('script');
-            scriptElement.src = 'https://public.tableau.com/javascripts/api/viz_v1.js';
-            vizElement.parentNode.insertBefore(scriptElement, vizElement);
-        </script>
+    <div class='tableauPlaceholder' id='viz1623978522231' style='position: relative'>
+        <noscript><a href='#'>
+            <img alt='แผนที่แสดงสัดส่วนการใช้พลังงานทางเลือกต่อพลังงานทั้งหมดระหว่างปี 2015-2019 ' src='https:&#47;&#47;public.tableau.com&#47;static&#47;images&#47;He&#47;HeatMap2_16239342073290&#47;Sheet1&#47;1_rss.png' style='border: none' /></a></noscript><object class='tableauViz'  style='display:none;'><param name='host_url' value='https%3A%2F%2Fpublic.tableau.com%2F' />
+            <param name='embed_code_version' value='3' />
+            <param name='site_root' value='' />
+            <param name='name' value='HeatMap2_16239342073290&#47;Sheet1' />
+            <param name='tabs' value='no' /><param name='toolbar' value='yes' />
+            <param name='static_image' value='https:&#47;&#47;public.tableau.com&#47;static&#47;images&#47;He&#47;HeatMap2_16239342073290&#47;Sheet1&#47;1.png' />
+            <param name='animate_transition' value='yes' />
+            <param name='display_static_image' value='yes' /><param name='display_spinner' value='yes' />
+            <param name='display_overlay' value='yes' />
+            <param name='display_count' value='yes' />
+            <param name='language' value='en-US' />
+        </object>
+    </div>
+    <script type='text/javascript'>
+        var divElement = document.getElementById('viz1623978522231');
+        var vizElement = divElement.getElementsByTagName('object')[0];
+        vizElement.style.width = '100%';
+        vizElement.style.height = '500px';
+        var scriptElement = document.createElement('script');
+        scriptElement.src = 'https://public.tableau.com/javascripts/api/viz_v1.js';
+        vizElement.parentNode.insertBefore(scriptElement, vizElement);
+    </script>
     '''
-components.html(html_map, height=600)
+# components.html(html_map, height=600)
+st.markdown(html_map,unsafe_allow_html=True)
 
 # ------------------------------------------------------------------------------
-# Ratio in Asean
+# Display ratio in Asean from Power BI
 
-html_ratio_indi = '<iframe width="100%" height="500" src="https://app.powerbi.com/view?r=eyJrIjoiZGZhNDUxYzMtZTc5Yi00ZGMyLWIxM2MtMTNkYjhkNTc1ODJiIiwidCI6ImRiNWRlZjZiLThmZDgtNGEzZS05MWRjLThkYjI1MDFhNjgyMiIsImMiOjEwfQ%3D%3D" frameborder="0" allowFullScreen="true"></iframe>'
+html_ratio_indi = '<iframe width="100%" height="auto" src="https://app.powerbi.com/view?r=eyJrIjoiZGZhNDUxYzMtZTc5Yi00ZGMyLWIxM2MtMTNkYjhkNTc1ODJiIiwidCI6ImRiNWRlZjZiLThmZDgtNGEzZS05MWRjLThkYjI1MDFhNjgyMiIsImMiOjEwfQ%3D%3D" frameborder="0" allowFullScreen="true"></iframe>'
 st.markdown(html_ratio_indi,unsafe_allow_html=True)
 
 html_ratio_sum = '<iframe width="100%" height="500" src="https://app.powerbi.com/view?r=eyJrIjoiMWI2MzEzZDItOWU5Yy00MzA0LWFhZTYtYmQ0OGY2OGZhYTRiIiwidCI6ImRiNWRlZjZiLThmZDgtNGEzZS05MWRjLThkYjI1MDFhNjgyMiIsImMiOjEwfQ%3D%3D" frameborder="0" allowFullScreen="true"></iframe>'
@@ -114,8 +111,6 @@ components.html("""<b>กำลังการผลิตไฟฟ้าติ�
 ตัวอย่างเช่นการผลิตไฟฟ้าจากพลังงานแสงอาทิตย์เป็นที่ทราบดีว่า พลังงานแสงอาทิตย์ที่ผลิตไฟฟ้าได้โดยผ่านแผงโซลาร์เซลล์นั้น ผลิตได้เฉพาะเวลาที่มีแสงแดดเท่านั้น ซึ่งค่าเฉลี่ยของแผงโซลาร์เซลล์จะผลิตไฟฟ้าได้ประมาณ 5 ชั่วโมงต่อวัน เมื่อเทียบจำนวนชั่วโมงที่ผลิตได้ในหนึ่งวัน (5 ชั่วโมง) กับจำนวนชั่วโมงที่มีในหนึ่งวัน (24 ชั่วโมง) เราจะได้ค่าประสิทธิภาพที่ร้อยละ 20.8 แต่ถ้านับรวมวันที่ฝนตกหรือท้องฟ้ามีเมฆหมอกมาก ปริมาณไฟฟ้าที่ผลิตได้จริงในหนึ่งปี (Plant Capacity Factor) เฉลี่ยของแผงโซลาร์เซลล์ก็จะลดลงเหลือประมาณร้อยละ 12-15 เท่านั้น <br>
 <br>
 ดังนั้น การผลิตไฟฟ้าจากพลังงานทางเลือกรวมทั้งพลังงานในรูปแบบอื่นๆจึงไม่สามารถมองที่สัดส่วนกำลังการผลิตติดตั้ง (Installed Capacity) เพียงอย่างเดียวได้ หากต้องการคำนวณปริมาณการผลิตไฟฟ้าให้เพียงพอต่อความต้องการเราจึงจำเป็นต้องดูควบคู่กันกับ <b>"อัตราความสามารถในการผลิตของโรงไฟฟ้า (Capacity Factor)"</b> ด้วยเช่นกัน <br>
-
-
 
 """, height=700)
 
@@ -197,119 +192,3 @@ for idx in range(0,8):
                 # }
             }
         },use_container_width = True)
-
-
-# ------------------------------------------------------------------------------
-# Bar charts of world power plant capacity factor
-# sort_region = ['United States', 'Canada', 'Mexico and Chile', 'Brazil',
-#                 'Other Central and South America', 'OECD Europe', 'Other non-OECD Europe and Eurasia',
-#                 'Russia', 'China', 'India', 'Japan', 'South Korea', 'Other non-OECD Asia', 'Middle East',
-#                 'Africa', 'Australia and New Zealand']
-#
-# bars = alt.Chart(world_cf).mark_bar().encode(
-#     x=alt.X('Wind:Q', scale=alt.Scale(domain=(0,100))),
-#     y=alt.Y('Region:N', sort='-x')
-# )
-#
-# text = bars.mark_text(
-#     align='left',
-#     baseline='middle',
-#     dx = 3
-# ).encode(
-#     text=alt.Text('Wind:Q', format='.1f')
-# )
-#
-# st.altair_chart((bars + text), use_container_width = True)
-
-# # ------------------------------------------------------------------------------
-# # Small multiple bar charts of world power plant capacity factor
-# mbars = alt.Chart(world_cf).mark_bar().encode(
-#     x=alt.X(alt.repeat('column'), type='quantitative', scale=alt.Scale(domain=(0,100))),
-#     y=alt.Y('Region:N', sort='-x')
-# ).properties(
-#     width=160,
-#     height=160
-# ).repeat(
-#     column = ['Wind','Solar', 'Coal', 'Hydro']
-# ).resolve_scale(x='independent')
-#
-# # text = mbars.mark_text(
-# #     align='left',
-# #     baseline='middle',
-# #     dx = 3
-# # ).encode(
-# #     text=alt.Text('Wind:Q', format='.1f')
-# # )
-#
-# st.altair_chart(mbars)
-
-# ------------------------------------------------------------------------------
-# # Setting figure with boxplot and swarmplot
-# fig, ax = plt.subplots(figsize=(11,7))
-# ax = sns.boxplot(data=cf.iloc[3:10,1:7])
-# ax = sns.swarmplot(data=cf.iloc[3:10,1:7], color=".25")
-
-# # Calculation and display medium on each boxplot
-# medians = cf.iloc[3:10,1:7].median()
-# for xtick in ax.get_xticks():
-#     ax.text(xtick,
-#             medians[xtick]+0.005,
-#             medians[xtick],
-#             horizontalalignment='center',
-#             color='w',
-#             weight='bold',
-#             bbox=dict(facecolor='#445A64')
-#            )
-
-# # Display with matplotlib
-# st.pyplot(fig)
-
-# ------------------------------------------------------------------------------
-# world_cf_pivot = world_cf.set_index('Region').stack().to_frame().reset_index()
-# world_cf_pivot = world_cf_pivot.set_axis(['Region', 'Type', 'Generation'], axis='columns')
-
-# st.vega_lite_chart(world_cf_pivot, {
-#     "facet": {
-#         "column": {"type": "nominal", "field": "Type"}
-#     },
-#     "spec": {
-#         "width": 100,
-#         "autosize": {
-#             "type": "pad",
-#             "contains": "padding"
-#         },
-#         "encoding": {
-#             "x": {"type": "quantitative",
-#                   "field": "Generation",
-#                   "scale":{"domain":[0,100]},
-#                   "title": "Generation (%)"
-#                  },
-#             "y": {"type": "nominal",
-#                   "field": "Region",
-#                   "transform": [{"filter": "datum.Type == Wind"}],
-#                   "sort": "+x"
-#                  }
-#         },
-#         "layer":[
-#             {"mark": "bar"},
-#             {"mark": {
-#                 "type": "text",
-#                 "align": {"expr": "datum.Generation < 0 ? 'right' : 'left'"},
-#                 "dx": {"expr": "datum.Generation < 0 ? -2 : 2"}
-#                 },
-#              "encoding": {"text": {"field": "Generation", "type": "quantitative"}}
-#             }
-#         ],
-#         "resolve": {
-#             "scale": {
-#                 "y": "shared"
-#                 }
-#         }
-#     },
-# })
-
-# components.html(
-#     """
-#         <div class='tableauPlaceholder' id='viz1623864092650' style='position: relative'><noscript><a href='#'><img alt='Dashboard 1 ' src='https:&#47;&#47;public.tableau.com&#47;static&#47;images&#47;Wo&#47;World_Renewable&#47;Dashboard1&#47;1_rss.png' style='border: none' /></a></noscript><object class='tableauViz'  style='display:none;'><param name='host_url' value='https%3A%2F%2Fpublic.tableau.com%2F' /> <param name='embed_code_version' value='3' /> <param name='site_root' value='' /><param name='name' value='World_Renewable&#47;Dashboard1' /><param name='tabs' value='no' /><param name='toolbar' value='yes' /><param name='static_image' value='https:&#47;&#47;public.tableau.com&#47;static&#47;images&#47;Wo&#47;World_Renewable&#47;Dashboard1&#47;1.png' /> <param name='animate_transition' value='yes' /><param name='display_static_image' value='yes' /><param name='display_spinner' value='yes' /><param name='display_overlay' value='yes' /><param name='display_count' value='yes' /><param name='language' value='en-US' /></object></div>                <script type='text/javascript'>                    var divElement = document.getElementById('viz1623864092650');                    var vizElement = divElement.getElementsByTagName('object')[0];                    if ( divElement.offsetWidth > 800 ) { vizElement.style.width='100%';vizElement.style.height=(divElement.offsetWidth*0.75)+'px';} else if ( divElement.offsetWidth > 500 ) { vizElement.style.width='100%';vizElement.style.height=(divElement.offsetWidth*0.75)+'px';} else { vizElement.style.width='100%';vizElement.style.height='777px';}                     var scriptElement = document.createElement('script');                    scriptElement.src = 'https://public.tableau.com/javascripts/api/viz_v1.js';                    vizElement.parentNode.insertBefore(scriptElement, vizElement);                </script>
-#     """
-# )
