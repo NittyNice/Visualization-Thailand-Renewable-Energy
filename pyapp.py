@@ -90,6 +90,12 @@ st.markdown(html_ratio_indi,unsafe_allow_html=True)
 html_ratio_sum = '<iframe width="100%" height="500" src="https://app.powerbi.com/view?r=eyJrIjoiMWI2MzEzZDItOWU5Yy00MzA0LWFhZTYtYmQ0OGY2OGZhYTRiIiwidCI6ImRiNWRlZjZiLThmZDgtNGEzZS05MWRjLThkYjI1MDFhNjgyMiIsImMiOjEwfQ%3D%3D" frameborder="0" allowFullScreen="true"></iframe>'
 st.markdown(html_ratio_sum ,unsafe_allow_html=True)
 
+# Data source link
+st.write(f'''
+    <div color: gray;">
+        <p>แหล่งที่มา : <a href="https://ourworldindata.org/energy" target="_blank">Our World in Data</a></p>
+    </div>
+''',unsafe_allow_html=True )
 # ------------------------------------------------------------------------------
 # Thailand Electric Generation
 st.header('รายละเอียดการผลิตพลังงานไฟฟ้าจากพลังงานชนิดต่างๆภายในประเทศไทย และแผนการพัฒนาการผลิตไฟฟ้าจากพลังงานทางเลือก')
@@ -106,17 +112,16 @@ st.write(f'''
     <div style="margin: 2rem 2rem 0 0; color: gray;">
             <p style="margin-bottom: 0">แหล่งที่มา : <a href="http://www.eppo.go.th/index.php/th/informationservices/ct-menu-item-56" target="_blank">สำนักงานนโยบายและแผนพลังงาน (สนพ.) สังกัตกระทรวงพลังงาน</a></p>
             <p style="margin: 0 0 0 5rem;"><a href="https://www.egat.co.th/images/businessop/PDP2018-Rev1-Oct2020.pdf" target="_blank">แผนพัฒนาพลังงาน</a></p>
-            <p style="margin: 0 0 3rem 5rem;"><a href="https://www.egat.co.th/index.php?option=com_content&view=article&id=76&Itemid=116" target="_blank">การไฟฟ้าฝ่ายผลิตแห่งประเทศไทย</a></p>
+            <p style="margin: 0 0 0 5rem;"><a href="https://www.egat.co.th/index.php?option=com_content&view=article&id=76&Itemid=116" target="_blank">การไฟฟ้าฝ่ายผลิตแห่งประเทศไทย</a></p>
     </div>
 ''',unsafe_allow_html=True )
 
 # ------------------------------------------------------------------------------
 # Read data
-# install_cap = pd.read_csv('Install_Capacity_of_Alternative_Energy.csv')
-# cf = pd.read_csv('Alternative_Energy_Capacity_Factor.csv')
+# install_cap = pd.read_csv('data/Install_Capacity_of_Alternative_Energy.csv')
 cf = pd.read_csv('data/Alternative_Energy_Capacity_Factor.csv')
-# generation = pd.read_csv('Alternative_Energy_Generation.csv')
-world_cf = pd.read_csv('World_capacity_factors.csv')
+# generation = pd.read_csv('data/Alternative_Energy_Generation.csv')
+world_cf = pd.read_csv('data/World_capacity_factors.csv')
 
 # ------------------------------------------------------------------------------
 st.write(f'''
