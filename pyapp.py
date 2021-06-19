@@ -58,35 +58,7 @@ html_map = f'''
         vizElement.parentNode.insertBefore(scriptElement, vizElement);
     </script>
     '''
-# components.html(html_map, height=600)
-st.markdown(f'''
-    <div class='tableauPlaceholder' id='viz1623978522231' style='position: relative'>
-        <noscript><a href='#'>
-            <img alt='แผนที่แสดงสัดส่วนการใช้พลังงานทางเลือกต่อพลังงานทั้งหมดระหว่างปี 2015-2019 ' src='https:&#47;&#47;public.tableau.com&#47;static&#47;images&#47;He&#47;HeatMap2_16239342073290&#47;Sheet1&#47;1_rss.png' style='border: none' /></a></noscript><object class='tableauViz'  style='display:none;'><param name='host_url' value='https%3A%2F%2Fpublic.tableau.com%2F' />
-            <param name='embed_code_version' value='3' />
-            <param name='site_root' value='' />
-            <param name='name' value='HeatMap2_16239342073290&#47;Sheet1' />
-            <param name='tabs' value='no' /><param name='toolbar' value='yes' />
-            <param name='static_image' value='https:&#47;&#47;public.tableau.com&#47;static&#47;images&#47;He&#47;HeatMap2_16239342073290&#47;Sheet1&#47;1.png' />
-            <param name='animate_transition' value='yes' />
-            <param name='display_static_image' value='yes' /><param name='display_spinner' value='yes' />
-            <param name='display_overlay' value='yes' />
-            <param name='display_count' value='yes' />
-            <param name='language' value='en-US' />
-        </object>
-    </div>
-    <script type='text/javascript'>
-        var divElement = document.getElementById('viz1623978522231');
-        var vizElement = divElement.getElementsByTagName('object')[0];
-        vizElement.style.width = '100%';
-        vizElement.style.height = '500px';
-        var scriptElement = document.createElement('script');
-        scriptElement.src = 'https://public.tableau.com/javascripts/api/viz_v1.js';
-        vizElement.parentNode.insertBefore(scriptElement, vizElement);
-    </script>
-    ''',
-    unsafe_allow_html=True)
-
+components.html(html_map, height=600)
 
 # ------------------------------------------------------------------------------
 # Display ratio in Asean from Power BI
@@ -115,7 +87,7 @@ cf = pd.read_csv('Alternative_Energy_Capacity_Factor.csv')
 world_cf = pd.read_csv('World_capacity_factors.csv')
 
 # ------------------------------------------------------------------------------
-components.html("""<b>กำลังการผลิตไฟฟ้าติดตั้ง (Installed power generation capacity)</b> หรือเรียกสั้น ๆ เป็นภาษาอังกฤษว่า Installed Capacity นั้น คือกำลังการผลิตไฟฟ้าที่โรงไฟฟ้าสามารถผลิตได้เมื่อเดินเครื่องเต็มกำลัง มีหน่วยเป็น กิโลวัตต์ (kW) หรือ เมกะวัตต์ (MW) <br>
+st.write(f"""<b>กำลังการผลิตไฟฟ้าติดตั้ง (Installed power generation capacity)</b> หรือเรียกสั้น ๆ เป็นภาษาอังกฤษว่า Installed Capacity นั้น คือกำลังการผลิตไฟฟ้าที่โรงไฟฟ้าสามารถผลิตได้เมื่อเดินเครื่องเต็มกำลัง มีหน่วยเป็น กิโลวัตต์ (kW) หรือ เมกะวัตต์ (MW) <br>
 <br>
 <b>อัตราความสามารถในการผลิตของโรงไฟฟ้า (Capacity Factor)</b> คือ อัตราส่วนพลังงานไฟฟ้าที่ผลิตได้จริงในช่วงเวลาที่กำหนดต่อพลังงานไฟฟ้าสูงสุดที่สามารถผลิตได้ในช่วงเวลานั้น <br>
 <br>
@@ -139,7 +111,7 @@ components.html("""<b>กำลังการผลิตไฟฟ้าติ�
 <br>
 ดังนั้น การผลิตไฟฟ้าจากพลังงานทางเลือกรวมทั้งพลังงานในรูปแบบอื่นๆจึงไม่สามารถมองที่สัดส่วนกำลังการผลิตติดตั้ง (Installed Capacity) เพียงอย่างเดียวได้ หากต้องการคำนวณปริมาณการผลิตไฟฟ้าให้เพียงพอต่อความต้องการเราจึงจำเป็นต้องดูควบคู่กันกับ <b>"อัตราความสามารถในการผลิตของโรงไฟฟ้า (Capacity Factor)"</b> ด้วยเช่นกัน <br>
 
-""", height=700)
+""",use_container_width = True)
 
 # ------------------------------------------------------------------------------
 # Boxplot of Alternative Energy Capacity Factor in Thailand
