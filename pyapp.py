@@ -88,7 +88,7 @@ world_cf = pd.read_csv('World_capacity_factors.csv')
 
 # ------------------------------------------------------------------------------
 st.write(f'''
-<div style="width: 90%: text-align: center: margin: 10rem 5rem 10rem 5rem;">
+<div style="width: 90%; text-align: center; margin: 10rem 5rem 10rem 5rem;">
     <b>กำลังการผลิตไฟฟ้าติดตั้ง (Installed power generation capacity)</b> หรือเรียกสั้น ๆ เป็นภาษาอังกฤษว่า Installed Capacity นั้น คือกำลังการผลิตไฟฟ้าที่โรงไฟฟ้าสามารถผลิตได้เมื่อเดินเครื่องเต็มกำลัง มีหน่วยเป็น กิโลวัตต์ (kW) หรือ เมกะวัตต์ (MW) <br>
     <br>
     <b>อัตราความสามารถในการผลิตของโรงไฟฟ้า (Capacity Factor)</b> คือ อัตราส่วนพลังงานไฟฟ้าที่ผลิตได้จริงในช่วงเวลาที่กำหนดต่อพลังงานไฟฟ้าสูงสุดที่สามารถผลิตได้ในช่วงเวลานั้น <br>
