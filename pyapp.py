@@ -52,18 +52,24 @@ html_map = f'''
         var divElement = document.getElementById('viz1623978522231');
         var vizElement = divElement.getElementsByTagName('object')[0];
         vizElement.style.width = '100%';
-        vizElement.style.height = '500px';
+        vizElement.style.height = '550px';
         var scriptElement = document.createElement('script');
         scriptElement.src = 'https://public.tableau.com/javascripts/api/viz_v1.js';
         vizElement.parentNode.insertBefore(scriptElement, vizElement);
     </script>
     '''
 components.html(html_map, height=600)
+st.write(f'''
+    <div style="margin: 2rem 2rem 0 0; color: gray;">
+        <p>แหล่งที่มา: <a href="https://ourworldindata.org/energy">Our World in Data</a></p><br>
+    </div>
+''',unsafe_allow_html=True )
 
 # ------------------------------------------------------------------------------
 # Display ratio in Asean from Power BI
+st.header('เปรียบเทียบสัดส่วนการใช้พลังงานทางเลือกภายในกลุ่มประเทศอาเซียน')
 
-html_ratio_indi = '<iframe width="100%" height="500" src="https://app.powerbi.com/view?r=eyJrIjoiZGZhNDUxYzMtZTc5Yi00ZGMyLWIxM2MtMTNkYjhkNTc1ODJiIiwidCI6ImRiNWRlZjZiLThmZDgtNGEzZS05MWRjLThkYjI1MDFhNjgyMiIsImMiOjEwfQ%3D%3D" frameborder="0" allowFullScreen="true"></iframe>'
+html_ratio_indi = '<iframe width="100%" height="550" src="https://app.powerbi.com/view?r=eyJrIjoiZGZhNDUxYzMtZTc5Yi00ZGMyLWIxM2MtMTNkYjhkNTc1ODJiIiwidCI6ImRiNWRlZjZiLThmZDgtNGEzZS05MWRjLThkYjI1MDFhNjgyMiIsImMiOjEwfQ%3D%3D" frameborder="0" allowFullScreen="true"></iframe>'
 st.markdown(html_ratio_indi,unsafe_allow_html=True)
 
 html_ratio_sum = '<iframe width="100%" height="500" src="https://app.powerbi.com/view?r=eyJrIjoiMWI2MzEzZDItOWU5Yy00MzA0LWFhZTYtYmQ0OGY2OGZhYTRiIiwidCI6ImRiNWRlZjZiLThmZDgtNGEzZS05MWRjLThkYjI1MDFhNjgyMiIsImMiOjEwfQ%3D%3D" frameborder="0" allowFullScreen="true"></iframe>'
@@ -71,12 +77,21 @@ st.markdown(html_ratio_sum ,unsafe_allow_html=True)
 
 # ------------------------------------------------------------------------------
 # Thailand Electric Generation
-html_thai_gen = '<iframe width="100%" height="500" src="https://app.powerbi.com/view?r=eyJrIjoiZjJkM2VlOTktYTdkMy00MGY1LTlmYzAtMTE2MzMxZDk5MWNlIiwidCI6ImRiNWRlZjZiLThmZDgtNGEzZS05MWRjLThkYjI1MDFhNjgyMiIsImMiOjEwfQ%3D%3D&pageName=ReportSection5de7c14c100a03822cde" frameborder="0" allowFullScreen="true"></iframe>'
+st.header('รายละเอียดการผลิตพลังงานไฟฟ้าจากพลังงานชนิดต่างๆภายในประเทศไทย และแผนการพัฒนาการผลิตไฟฟ้าจากพลังงานทางเลือก')
+html_thai_gen = '<iframe width="100%" height="550" src="https://app.powerbi.com/view?r=eyJrIjoiZjJkM2VlOTktYTdkMy00MGY1LTlmYzAtMTE2MzMxZDk5MWNlIiwidCI6ImRiNWRlZjZiLThmZDgtNGEzZS05MWRjLThkYjI1MDFhNjgyMiIsImMiOjEwfQ%3D%3D&pageName=ReportSection5de7c14c100a03822cde" frameborder="0" allowFullScreen="true"></iframe>'
 st.markdown(html_thai_gen ,unsafe_allow_html=True)
+
+st.write(f'''
+    <div style="margin: 2rem 2rem 0 0; color: gray;">
+        <p>แหล่งที่มา: <a href="http://www.eppo.go.th/index.php/th/informationservices/ct-menu-item-56">สำนักงานนโยบายและแผนพลังงาน (สนพใ) สังกัตกระทรวงพลังงาน</a></p><br>
+        <p>          <a href="https://www.egat.co.th/images/businessop/PDP2018-Rev1-Oct2020.pdf">แผนพัฒนาพลังงาน</a></p><br>
+        <p>          <a href="https://www.egat.co.th/index.php?option=com_content&view=article&id=76&Itemid=116">การไฟฟ้าฝ่ายผลิตแห่งประเทศไทย</a></p><br>
+    </div>
+''',unsafe_allow_html=True )
 
 # ------------------------------------------------------------------------------
 # Thailand PDP2018
-html_thai_pdp = '<iframe width="100%" height="500" src="https://app.powerbi.com/view?r=eyJrIjoiODc3MjY0YjMtNTUzNC00YzdjLTk3ZTgtN2U2ZjMxMjFhOTU1IiwidCI6ImRiNWRlZjZiLThmZDgtNGEzZS05MWRjLThkYjI1MDFhNjgyMiIsImMiOjEwfQ%3D%3D" frameborder="0" allowFullScreen="true"></iframe>'
+html_thai_pdp = '<iframe width="100%" height="550" src="https://app.powerbi.com/view?r=eyJrIjoiODc3MjY0YjMtNTUzNC00YzdjLTk3ZTgtN2U2ZjMxMjFhOTU1IiwidCI6ImRiNWRlZjZiLThmZDgtNGEzZS05MWRjLThkYjI1MDFhNjgyMiIsImMiOjEwfQ%3D%3D" frameborder="0" allowFullScreen="true"></iframe>'
 st.markdown(html_thai_pdp ,unsafe_allow_html=True)
 
 # ------------------------------------------------------------------------------
@@ -88,7 +103,7 @@ world_cf = pd.read_csv('World_capacity_factors.csv')
 
 # ------------------------------------------------------------------------------
 st.write(f'''
-<div style="width: 90%; align-content: center; margin: 10rem 5rem 10rem 5rem;">
+<div style="width: 90%; align-content: center; margin: 5rem 2rem 5rem 2rem;">
     <b>กำลังการผลิตไฟฟ้าติดตั้ง (Installed power generation capacity)</b> หรือเรียกสั้น ๆ เป็นภาษาอังกฤษว่า Installed Capacity นั้น คือกำลังการผลิตไฟฟ้าที่โรงไฟฟ้าสามารถผลิตได้เมื่อเดินเครื่องเต็มกำลัง มีหน่วยเป็น กิโลวัตต์ (kW) หรือ เมกะวัตต์ (MW) <br>
     <br>
     <b>อัตราความสามารถในการผลิตของโรงไฟฟ้า (Capacity Factor)</b> คือ อัตราส่วนพลังงานไฟฟ้าที่ผลิตได้จริงในช่วงเวลาที่กำหนดต่อพลังงานไฟฟ้าสูงสุดที่สามารถผลิตได้ในช่วงเวลานั้น <br>
@@ -116,7 +131,7 @@ st.write(f'''
 
 # ------------------------------------------------------------------------------
 # Boxplot of Alternative Energy Capacity Factor in Thailand
-st.header('อัตราความสามารถในการผลิตของโรงไฟฟ้า (Capacity Factor) พลังงานทางเลือกในไทยตั้งแต่ปี พ.ศ.2555 - 2562')
+st.header('อัตราความสามารถในการผลิตของโรงไฟฟ้า (Capacity Factor) พลังงานทางเลือกในไทยตั้งแต่ปี ค.ศ.2012 - 2019')
 
 cf_pivot = cf.set_index("ปี").stack().to_frame().reset_index()
 cf_pivot = cf_pivot.set_axis(['ปี', 'ชนิด', 'Capacity Factor'], axis='columns')
@@ -138,7 +153,7 @@ with col2:
     st.altair_chart(boxs, use_container_width = True)
 
 # ------------------------------------------------------------------------------
-st.header('Capacity Factor ของการผลิตไฟฟ้าจากพลังงานของไทยเมื่อเทียบกับภูมิภาคอื่นๆ')
+st.header('Capacity Factor ของการผลิตไฟฟ้าจากพลังงานรูปแบบต่างๆของไทยเมื่อเทียบกับภูมิภาคอื่น')
 row1_1, row1_2 = st.beta_columns((1,1))
 row2_1, row2_2 = st.beta_columns((1,1))
 row3_1, row3_2 = st.beta_columns((1,1))
@@ -185,10 +200,12 @@ for idx in range(0,8):
                     },
                     "legend": False
                 }
-                # "color": {
-                #     "field":"Region",
-                #     "scale": {"scheme": "category20b"},
-                #     "legend": False
-                # }
             }
         },use_container_width = True)
+
+st.write(f'''
+    <div style="margin: 2rem 2rem 0 0; color: gray;">
+        <p>แหล่งที่มา: <a href="http://services.dede.go.th/opendata/">กรมพัฒนาพลังงานทดแทนและอนุรักษ์พลังงาน สังกัตกระทรวงพลังงาน</a></p><br>
+        <p>          <a href="https://www.eia.gov/todayinenergy/detail.php?id=22832">U.S. Energy Information Administration</a></p>
+    </div>
+''',unsafe_allow_html=True )
