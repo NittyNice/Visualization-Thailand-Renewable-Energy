@@ -114,7 +114,7 @@ st.write(f'''
 # Read data
 # install_cap = pd.read_csv('Install_Capacity_of_Alternative_Energy.csv')
 # cf = pd.read_csv('Alternative_Energy_Capacity_Factor.csv')
-cf = pd.read_csv('data\Alternative_Energy_Capacity_Factor.csv')
+cf = pd.read_csv('data/Alternative_Energy_Capacity_Factor.csv')
 # generation = pd.read_csv('Alternative_Energy_Generation.csv')
 world_cf = pd.read_csv('World_capacity_factors.csv')
 
