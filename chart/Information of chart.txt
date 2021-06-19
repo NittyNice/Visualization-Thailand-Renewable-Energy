@@ -1,0 +1,24 @@
+Visualization chart in 
+https://renewable-data-visual-nida.herokuapp.com/
+
+1) Bar chart race created by Flourish: สัดส่วนการใช้พลังงานทางเลือกต่อพลังงานทั้งหมดปี 1965 ถึง 2019
+   https://public.flourish.studio/visualisation/6453087/
+
+2) Map created by Tableau: แผนที่แสดงสัดส่วนการใช้พลังงานทางเลือกต่อพลังงานทั้งหมดระหว่างปี 2015-2019
+   https://public.tableau.com/app/profile/prant1075/viz/HeatMap2_16239342073290/Sheet1
+
+3) Line chart created by Power BI: สัดส่วนการใช้พลังงานทางเลือกภายในกลุ่มประเทศอาเซียน
+   https://app.powerbi.com/view?r=eyJrIjoiZGZhNDUxYzMtZTc5Yi00ZGMyLWIxM2MtMTNkYjhkNTc1ODJiIiwidCI6ImRiNWRlZjZiLThmZDgtNGEzZS05MWRjLThkYjI1MDFhNjgyMiIsImMiOjEwfQ%3D%3D
+   https://app.powerbi.com/view?r=eyJrIjoiMWI2MzEzZDItOWU5Yy00MzA0LWFhZTYtYmQ0OGY2OGZhYTRiIiwidCI6ImRiNWRlZjZiLThmZDgtNGEzZS05MWRjLThkYjI1MDFhNjgyMiIsImMiOjEwfQ%3D%3D
+
+4) Bar of pie chart created by Power BI: พลังงานไฟฟ้าที่ผลิตในปี 2019 ของประเทศไทย
+   https://app.powerbi.com/view?r=eyJrIjoiZjJkM2VlOTktYTdkMy00MGY1LTlmYzAtMTE2MzMxZDk5MWNlIiwidCI6ImRiNWRlZjZiLThmZDgtNGEzZS05MWRjLThkYjI1MDFhNjgyMiIsImMiOjEwfQ%3D%3D&pageName=ReportSection5de7c14c100a03822cde
+
+5) Line chart created by Power BI: แผนพัฒนาประมาณการกำลังผลิตไฟฟ้าพลังงานหมุนเวียนแยกตามประเภทเชื้อเพลิง
+   https://app.powerbi.com/view?r=eyJrIjoiODc3MjY0YjMtNTUzNC00YzdjLTk3ZTgtN2U2ZjMxMjFhOTU1IiwidCI6ImRiNWRlZjZiLThmZDgtNGEzZS05MWRjLThkYjI1MDFhNjgyMiIsImMiOjEwfQ%3D%3D
+
+6) Boxplot created by Altair
+   https://github.com/NittyNice/renewable_energy
+
+7) Bar chart created by Vega-lite
+   https://github.com/NittyNice/renewable_energy
