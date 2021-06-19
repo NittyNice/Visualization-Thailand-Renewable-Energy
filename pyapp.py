@@ -19,6 +19,18 @@ st.markdown(
         ''',
         unsafe_allow_html=True
     )
+st.markdown(
+        f'''
+        <style>
+            a:link {{
+              color: green;
+              background-color: transparent;
+              text-decoration: none;
+            }}
+        </style>
+        ''',
+        unsafe_allow_html=True
+    )
 
 # ------------------------------------------------------------------------------
 # Display bar chart race from flourish studio
