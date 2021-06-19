@@ -14,6 +14,26 @@ st.markdown(
                 padding-right: 1rem;
                 padding-left: 1rem;
                 padding-bottom: 1rem;
+            }},
+            a:link {{
+              color: green;
+              background-color: transparent;
+              text-decoration: none;
+            }},
+            a:visited {{
+              color: pink;
+              background-color: transparent;
+              text-decoration: none;
+            }},
+            a:hover {{
+              color: red;
+              background-color: transparent;
+              text-decoration: underline;
+            }},
+            a:active {{
+              color: yellow;
+              background-color: transparent;
+              text-decoration: underline;
             }}
         </style>
         ''',
@@ -60,8 +80,8 @@ html_map = f'''
     '''
 components.html(html_map, height=600)
 st.write(f'''
-    <div style="margin: 2rem 2rem 0 0; color: gray;">
-        <p>แหล่งที่มา: <a href="https://ourworldindata.org/energy">Our World in Data</a></p><br>
+    <div color: gray;">
+        <p>แหล่งที่มา: <a href="https://ourworldindata.org/energy">Our World in Data</a></p>
     </div>
 ''',unsafe_allow_html=True )
 
