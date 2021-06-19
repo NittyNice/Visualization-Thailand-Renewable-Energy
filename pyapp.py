@@ -19,6 +19,7 @@ st.markdown(
         ''',
         unsafe_allow_html=True
     )
+    
 st.markdown(
         f'''
         <style>
@@ -26,6 +27,21 @@ st.markdown(
               color: green;
               background-color: transparent;
               text-decoration: none;
+            }},
+            a:visited {{
+              color: pink;
+              background-color: transparent;
+              text-decoration: none;
+            }},
+            a:hover {{
+              color: red;
+              background-color: transparent;
+              text-decoration: underline;
+            }},
+            a:active {{
+              color: yellow;
+              background-color: transparent;
+              text-decoration: underline;
             }}
         </style>
         ''',
@@ -93,32 +109,11 @@ st.header('รายละเอียดการผลิตพลังงา
 html_thai_gen = '<iframe width="100%" height="550" src="https://app.powerbi.com/view?r=eyJrIjoiZjJkM2VlOTktYTdkMy00MGY1LTlmYzAtMTE2MzMxZDk5MWNlIiwidCI6ImRiNWRlZjZiLThmZDgtNGEzZS05MWRjLThkYjI1MDFhNjgyMiIsImMiOjEwfQ%3D%3D&pageName=ReportSection5de7c14c100a03822cde" frameborder="0" allowFullScreen="true"></iframe>'
 st.markdown(html_thai_gen ,unsafe_allow_html=True)
 
-sty = """a:link {
-  color: green;
-  background-color: transparent;
-  text-decoration: none;
-},
-a:visited {
-  color: pink;
-  background-color: transparent;
-  text-decoration: none;
-},
-a:hover {
-  color: red;
-  background-color: transparent;
-  text-decoration: underline;
-},
-a:active {
-  color: yellow;
-  background-color: transparent;
-  text-decoration: underline;
-}"""
-
 st.write(f'''
     <div style="margin: 2rem 2rem 0 0; color: gray;">
-        <p>แหล่งที่มา: <a style={sty} href="http://www.eppo.go.th/index.php/th/informationservices/ct-menu-item-56">สำนักงานนโยบายและแผนพลังงาน (สนพใ) สังกัตกระทรวงพลังงาน</a></p><br>
-        <p>          <a href="https://www.egat.co.th/images/businessop/PDP2018-Rev1-Oct2020.pdf">แผนพัฒนาพลังงาน</a></p><br>
-        <p>          <a href="https://www.egat.co.th/index.php?option=com_content&view=article&id=76&Itemid=116">การไฟฟ้าฝ่ายผลิตแห่งประเทศไทย</a></p><br>
+        <p>แหล่งที่มา: <a href="http://www.eppo.go.th/index.php/th/informationservices/ct-menu-item-56" target="_blank">สำนักงานนโยบายและแผนพลังงาน (สนพใ) สังกัตกระทรวงพลังงาน</a></p>
+        <pre>          <a href="https://www.egat.co.th/images/businessop/PDP2018-Rev1-Oct2020.pdf" target="_blank">แผนพัฒนาพลังงาน</a></pre>
+        <pre>          <a href="https://www.egat.co.th/index.php?option=com_content&view=article&id=76&Itemid=116" target="_blank">การไฟฟ้าฝ่ายผลิตแห่งประเทศไทย</a></pre>
     </div>
 ''',unsafe_allow_html=True )
 
