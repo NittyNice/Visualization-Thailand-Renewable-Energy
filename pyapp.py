@@ -32,7 +32,7 @@ components.html(html_bar_race, height=700)
 
 # ------------------------------------------------------------------------------
 # Display World map from Tapleau-public
-html_map = '''
+html_map = f'''
     <div class='tableauPlaceholder' id='viz1623978522231' style='position: relative'>
         <noscript><a href='#'>
             <img alt='แผนที่แสดงสัดส่วนการใช้พลังงานทางเลือกต่อพลังงานทั้งหมดระหว่างปี 2015-2019 ' src='https:&#47;&#47;public.tableau.com&#47;static&#47;images&#47;He&#47;HeatMap2_16239342073290&#47;Sheet1&#47;1_rss.png' style='border: none' /></a></noscript><object class='tableauViz'  style='display:none;'><param name='host_url' value='https%3A%2F%2Fpublic.tableau.com%2F' />
@@ -58,12 +58,40 @@ html_map = '''
         vizElement.parentNode.insertBefore(scriptElement, vizElement);
     </script>
     '''
-components.html(html_map, height=600)
+# components.html(html_map, height=600)
+st.markdown(f'''
+    <div class='tableauPlaceholder' id='viz1623978522231' style='position: relative'>
+        <noscript><a href='#'>
+            <img alt='แผนที่แสดงสัดส่วนการใช้พลังงานทางเลือกต่อพลังงานทั้งหมดระหว่างปี 2015-2019 ' src='https:&#47;&#47;public.tableau.com&#47;static&#47;images&#47;He&#47;HeatMap2_16239342073290&#47;Sheet1&#47;1_rss.png' style='border: none' /></a></noscript><object class='tableauViz'  style='display:none;'><param name='host_url' value='https%3A%2F%2Fpublic.tableau.com%2F' />
+            <param name='embed_code_version' value='3' />
+            <param name='site_root' value='' />
+            <param name='name' value='HeatMap2_16239342073290&#47;Sheet1' />
+            <param name='tabs' value='no' /><param name='toolbar' value='yes' />
+            <param name='static_image' value='https:&#47;&#47;public.tableau.com&#47;static&#47;images&#47;He&#47;HeatMap2_16239342073290&#47;Sheet1&#47;1.png' />
+            <param name='animate_transition' value='yes' />
+            <param name='display_static_image' value='yes' /><param name='display_spinner' value='yes' />
+            <param name='display_overlay' value='yes' />
+            <param name='display_count' value='yes' />
+            <param name='language' value='en-US' />
+        </object>
+    </div>
+    <script type='text/javascript'>
+        var divElement = document.getElementById('viz1623978522231');
+        var vizElement = divElement.getElementsByTagName('object')[0];
+        vizElement.style.width = '100%';
+        vizElement.style.height = '500px';
+        var scriptElement = document.createElement('script');
+        scriptElement.src = 'https://public.tableau.com/javascripts/api/viz_v1.js';
+        vizElement.parentNode.insertBefore(scriptElement, vizElement);
+    </script>
+    ''',
+    unsafe_allow_html=True)
+
 
 # ------------------------------------------------------------------------------
 # Display ratio in Asean from Power BI
 
-html_ratio_indi = '<iframe width="100%" height="auto" src="https://app.powerbi.com/view?r=eyJrIjoiZGZhNDUxYzMtZTc5Yi00ZGMyLWIxM2MtMTNkYjhkNTc1ODJiIiwidCI6ImRiNWRlZjZiLThmZDgtNGEzZS05MWRjLThkYjI1MDFhNjgyMiIsImMiOjEwfQ%3D%3D" frameborder="0" allowFullScreen="true"></iframe>'
+html_ratio_indi = '<iframe width="100%" height="500" src="https://app.powerbi.com/view?r=eyJrIjoiZGZhNDUxYzMtZTc5Yi00ZGMyLWIxM2MtMTNkYjhkNTc1ODJiIiwidCI6ImRiNWRlZjZiLThmZDgtNGEzZS05MWRjLThkYjI1MDFhNjgyMiIsImMiOjEwfQ%3D%3D" frameborder="0" allowFullScreen="true"></iframe>'
 st.markdown(html_ratio_indi,unsafe_allow_html=True)
 
 html_ratio_sum = '<iframe width="100%" height="500" src="https://app.powerbi.com/view?r=eyJrIjoiMWI2MzEzZDItOWU5Yy00MzA0LWFhZTYtYmQ0OGY2OGZhYTRiIiwidCI6ImRiNWRlZjZiLThmZDgtNGEzZS05MWRjLThkYjI1MDFhNjgyMiIsImMiOjEwfQ%3D%3D" frameborder="0" allowFullScreen="true"></iframe>'
