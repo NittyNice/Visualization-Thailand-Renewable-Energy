@@ -15,26 +15,26 @@ st.markdown(
                 padding-left: 1rem;
                 padding-bottom: 1rem;
             }},
-            a:link {{
+            a:link {
               color: green;
               background-color: transparent;
               text-decoration: none;
-            }},
-            a:visited {{
+            },
+            a:visited {
               color: pink;
               background-color: transparent;
               text-decoration: none;
-            }},
-            a:hover {{
+            },
+            a:hover {
               color: red;
               background-color: transparent;
               text-decoration: underline;
-            }},
-            a:active {{
+            },
+            a:active {
               color: yellow;
               background-color: transparent;
               text-decoration: underline;
-            }}
+            }
         </style>
         ''',
         unsafe_allow_html=True
