@@ -96,7 +96,7 @@ st.markdown(html_thai_gen ,unsafe_allow_html=True)
 
 st.write(f'''
     <div style="margin: 2rem 2rem 0 0; color: gray;">
-        <table style="border: 0px;">
+        <table style="border: none;">
             <tr style="padding: 1px">
                 <td>แหล่งที่มา: </td>
                 <td><a href="http://www.eppo.go.th/index.php/th/informationservices/ct-menu-item-56" target="_blank">สำนักงานนโยบายและแผนพลังงาน (สนพ.) สังกัตกระทรวงพลังงาน</a></td>
