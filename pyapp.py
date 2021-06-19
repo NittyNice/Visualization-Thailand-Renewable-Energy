@@ -24,25 +24,10 @@ st.markdown(
         f'''
         <style>
             a:link {{
-              color: green;
+              color: bule;
               background-color: transparent;
               text-decoration: none;
             }},
-            a:visited {{
-              color: pink;
-              background-color: transparent;
-              text-decoration: none;
-            }},
-            a:hover {{
-              color: red;
-              background-color: transparent;
-              text-decoration: underline;
-            }},
-            a:active {{
-              color: yellow;
-              background-color: transparent;
-              text-decoration: underline;
-            }}
         </style>
         ''',
         unsafe_allow_html=True
@@ -113,8 +98,8 @@ st.write(f'''
     <div style="margin: 2rem 2rem 0 0; color: gray;">
         <p>
             แหล่งที่มา: <a href="http://www.eppo.go.th/index.php/th/informationservices/ct-menu-item-56" target="_blank">สำนักงานนโยบายและแผนพลังงาน (สนพ.) สังกัตกระทรวงพลังงาน</a><br>
-            &emsp&emsp<a href="https://www.egat.co.th/images/businessop/PDP2018-Rev1-Oct2020.pdf" target="_blank">แผนพัฒนาพลังงาน</a><br>
-            &emsp&emsp<a href="https://www.egat.co.th/index.php?option=com_content&view=article&id=76&Itemid=116" target="_blank">การไฟฟ้าฝ่ายผลิตแห่งประเทศไทย</a>
+                      <a href="https://www.egat.co.th/images/businessop/PDP2018-Rev1-Oct2020.pdf" target="_blank">แผนพัฒนาพลังงาน</a><br>
+                      <a href="https://www.egat.co.th/index.php?option=com_content&view=article&id=76&Itemid=116" target="_blank">การไฟฟ้าฝ่ายผลิตแห่งประเทศไทย</a>
         </p>
 
     </div>
@@ -134,7 +119,7 @@ world_cf = pd.read_csv('World_capacity_factors.csv')
 
 # ------------------------------------------------------------------------------
 st.write(f'''
-<div style="width: 90%; align-content: center; margin: 5rem 2rem 5rem 2rem;">
+<div style="width: 90%; align-content: center; margin: 5rem 2rem 2rem 2rem;">
     <b>กำลังการผลิตไฟฟ้าติดตั้ง (Installed power generation capacity)</b> หรือเรียกสั้น ๆ เป็นภาษาอังกฤษว่า Installed Capacity นั้น คือกำลังการผลิตไฟฟ้าที่โรงไฟฟ้าสามารถผลิตได้เมื่อเดินเครื่องเต็มกำลัง มีหน่วยเป็น กิโลวัตต์ (kW) หรือ เมกะวัตต์ (MW) <br>
     <br>
     <b>อัตราความสามารถในการผลิตของโรงไฟฟ้า (Capacity Factor)</b> คือ อัตราส่วนพลังงานไฟฟ้าที่ผลิตได้จริงในช่วงเวลาที่กำหนดต่อพลังงานไฟฟ้าสูงสุดที่สามารถผลิตได้ในช่วงเวลานั้น <br>
@@ -238,7 +223,7 @@ st.write(f'''
     <div style="margin: 2rem 2rem 0 0; color: gray;">
         <p>
             แหล่งที่มา: <a href="http://services.dede.go.th/opendata/" target="_blank">กรมพัฒนาพลังงานทดแทนและอนุรักษ์พลังงาน สังกัตกระทรวงพลังงาน</a><br>
-            &emsp&emsp <a href="https://www.eia.gov/todayinenergy/detail.php?id=22832" target="_blank">U.S. Energy Information Administration</a>
+                      <a href="https://www.eia.gov/todayinenergy/detail.php?id=22832" target="_blank">U.S. Energy Information Administration</a>
         </p>
     </div>
 ''',unsafe_allow_html=True )
