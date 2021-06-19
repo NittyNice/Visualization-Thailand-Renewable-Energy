@@ -96,9 +96,9 @@ st.markdown(html_thai_gen ,unsafe_allow_html=True)
 
 st.write(f'''
     <div style="margin: 2rem 2rem 0 0; color: gray;">
-            <p>แหล่งที่มา: <a href="http://www.eppo.go.th/index.php/th/informationservices/ct-menu-item-56" target="_blank">สำนักงานนโยบายและแผนพลังงาน (สนพ.) สังกัตกระทรวงพลังงาน</a></p>
-            <p style="margin: 0 0 0 5rem"><a href="https://www.egat.co.th/images/businessop/PDP2018-Rev1-Oct2020.pdf" target="_blank">แผนพัฒนาพลังงาน</a></p>
-            <p style="margin-left: 0 0 0 5rem"><a href="https://www.egat.co.th/index.php?option=com_content&view=article&id=76&Itemid=116" target="_blank">การไฟฟ้าฝ่ายผลิตแห่งประเทศไทย</a></p>
+            <p>แหล่งที่มา:  <a href="http://www.eppo.go.th/index.php/th/informationservices/ct-menu-item-56" target="_blank">สำนักงานนโยบายและแผนพลังงาน (สนพ.) สังกัตกระทรวงพลังงาน</a></p>
+            <p style="margin: 0 0 0 5rem;"><a href="https://www.egat.co.th/images/businessop/PDP2018-Rev1-Oct2020.pdf" target="_blank">แผนพัฒนาพลังงาน</a></p>
+            <p style="margin: 0 0 0 5rem;"><a href="https://www.egat.co.th/index.php?option=com_content&view=article&id=76&Itemid=116" target="_blank">การไฟฟ้าฝ่ายผลิตแห่งประเทศไทย</a></p>
     </div>
 ''',unsafe_allow_html=True )
 
@@ -218,15 +218,7 @@ for idx in range(0,8):
 
 st.write(f'''
     <div style="margin: 2rem 2rem 0 0; color: gray;">
-        <table>
-            <tr>
-                <td>แหล่งที่มา: </td>
-                <td><a href="http://services.dede.go.th/opendata/" target="_blank">กรมพัฒนาพลังงานทดแทนและอนุรักษ์พลังงาน สังกัตกระทรวงพลังงาน</a></td>
-            </tr>
-            <tr>
-                <td></td>
-                <td><a href="https://www.eia.gov/todayinenergy/detail.php?id=22832" target="_blank">U.S. Energy Information Administration</a></td>
-            </tr>
-        </table>
+            <p>แหล่งที่มา:  <a href="http://services.dede.go.th/opendata/" target="_blank">กรมพัฒนาพลังงานทดแทนและอนุรักษ์พลังงาน สังกัตกระทรวงพลังงาน</a></p>
+            <p style="margin: 0 0 0 5rem;"><a href="https://www.eia.gov/todayinenergy/detail.php?id=22832" target="_blank">U.S. Energy Information Administration</a></p>
     </div>
 ''',unsafe_allow_html=True )
