@@ -2,7 +2,7 @@
 
 ## 1) Introduction
    We are interested in exploring alternative energy use for Thailand compared to other countries. It is certain that every countries in the world have different energy consumption depending on their area, economy and other factors. Therefore, the interesting is the power consumption proportion from several sources, both clean energy and fossil energy.  
-   This project is a group project in data visualization course. We will explore consumption proportion of renewable energy in Thailand compared with others. It is presented in a beautiful visual format from a variety of tools.  
+   This project is a group project in data visualization course. We will explore consumption proportion of renewable energy in Thailand compared with others. It is presented in a beautiful visual format from a variety of tools and deplotment with [Heroku](https://dashboard.heroku.com/).  
     
 Publication: https://renewable-data-visual-nida.herokuapp.com/
 
