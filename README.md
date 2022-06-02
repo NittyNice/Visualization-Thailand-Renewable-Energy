@@ -14,6 +14,6 @@ Publication: https://renewable-data-visual-nida.herokuapp.com/
 
 ## 3) Visualization tools
 - Beautiful and easily turn the data into stunning charts, maps and interactive storytelling with [flourish](https://flourish.studio/)  
-- [altair](https://altair-viz.github.io/) is a declarative statistical visualization library for Python, based on [Vega](https://vega.github.io/vega/) and [Vega-Lite](http://vega.github.io/vega-lite/), and the source is available on [GitHub](https://github.com/altair-viz/altair).
+- [Altair](https://altair-viz.github.io/) is a declarative statistical visualization library for Python, based on [Vega](https://vega.github.io/vega/) and [Vega-Lite](http://vega.github.io/vega-lite/), and the source is available on [GitHub](https://github.com/altair-viz/altair).
 - Create rich, interactive reports with visual analytics at your fingertips for free with [Power BI](https://powerbi.microsoft.com/en-au/desktop/)
 - Your data has a story and share it with the world by [Tableau-public](https://public.tableau.com/en-us/s/)
